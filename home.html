@@ -1,0 +1,65 @@
+<?
+session_start();
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Campeonatos de Jogos de Botão</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/formNovoCampeonato.css"/>
+        <link rel="stylesheet" type="text/css" href="css/campeonatoAbas.css"/>
+        <link rel="stylesheet" type="text/css" href="css/campeonato.css"/>
+        <script language="javascript" type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/jquery.livequery.js"></script>
+        <script language="javascript" type="text/javascript" src="js/jquery.form.js"></script>
+        <script language="javascript" type="text/javascript" src="js/funcoes.js"></script>
+        <script language="javascript" type="text/javascript" src="js/Time.js"></script>
+        <script language="javascript" type="text/javascript" src="js/ArrayTimes.js"></script>
+        <script language="javascript" type="text/javascript" src="js/Sorteio.js"></script>
+        <script language="javascript" type="text/javascript" src="js/atualizaClassificacao.js"></script>
+        <script language="javascript" type="text/javascript" src="js/js.js"></script>
+    </head>
+    <body>    	
+        <div id="cabecalho" class="heightBordas">
+            <h1>Campeonatos de Futebol de Botão</h1>
+        </div>
+	<div id="menuGuia">
+            <div id='centralizaMenu'>
+                <ul>
+                    <li><a href="http://localhost/CampeonatoBotao/">Início</a></li>
+                    <li><a href="http://localhost/CampeonatoBotao/novoCampeonato" style="border-right:1px solid #32a9fa" >Novo Campeonato</a></li>
+                    <!--<li><a href="http://localhost/CampeonatoBotao/index.php?pagina=verCampeonato&campeonato=1" style="border-right:1px solid #32a9fa">Ver pag campeonato</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div id="centraliza">
+            <div id="conteudo">
+                <!--<div id='listaCampeonatos'>-->
+                    <!--<div id='listaTimes'>                   
+                    </div>-->
+                    <?php
+                    include "geradores/geraPagina.php";
+                    $link = Link::getLink();                    
+                    geraPagina(Link::redirect($link));
+                    
+                    /*if(isset($_GET['pagina'])) {
+                        geraPagina($_GET['pagina']);
+                    }else{
+			geraPagina("principal");
+		    }*/
+                    ?>
+                <!--</div>-->
+            </div>
+        </div>
+        <!--<div id="rodape" class="heightBordas">
+        </div>-->
+        <div id="lightBox">
+            <div id="centralLightBox">
+                Carregando...
+            </div>
+        </div>
+        <input type="hidden" id="campCriado" value=""/>
+    </body>
+</html>

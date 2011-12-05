@@ -1,0 +1,46 @@
+#cabecalhoAbas{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+#listaMenu{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#listaMenu ul{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    float: left;
+    list-style: none;
+}
+#listaMenu ul li{
+    display: inline;
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    float: left;
+    padding: 4.5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    background-color: #F7F8F2;
+    color: #444;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    border-bottom-color:#AAA;
+}
+#listaMenu ul li:hover{
+    background-color: #666;
+    color: #FFF;
+}
+#listaMenu ul li.selecionada{
+    background-color: #FFF;
+    border-width: thin;
+    border-style:solid;
+    border-color: #AAA;
+    border-right-color: #AAA;
+    border-bottom-color: white;
+    color: #444;
+}

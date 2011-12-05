@@ -1,0 +1,109 @@
+#conteudoCampeonato{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #AAA;
+}
+.conteudos{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+#conteudoClassificacao{
+    display: block;
+}
+#cabecaSepara{
+    width: 98.5%;
+    height: 30px;
+    background-color: #368800;
+    color: white;    
+    text-transform:uppercase;
+    margin-left: -96px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+    padding-left: 20px;
+    padding: 10px 0px 0px 5px;
+}
+#cabecaSepara h3{
+    margin: 0;
+    padding: 0;
+}
+#conteudoTabela{
+    display: none;
+}
+#conteudoClassificacao table, #conteudoTabela table, #conteudoFinais table {
+    border-bottom:0.6em solid #EEF1E6;
+    border-collapse:collapse;
+    margin: 1em 0 0;
+    width: 70%;
+}
+table.tabelaclassificacao{
+    font-size: 15px;
+}
+table.tabelaclassificacao thead th {
+    /*background:#32A9FA none repeat scroll 0 0;*/
+    background: #80A40E none repeat scroll 0 0;
+    border-bottom:0.6em solid #EEF1E6;
+    color:#FFFFFF;
+    font-family:arial;
+    font-size: 12px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    line-height:normal;
+    padding: 0.1em 1em;
+    text-transform:uppercase;
+    border-right: 0.1em solid #80a40e;
+    border-top: 0.1em solid #80a40e;
+    border-left:0.1em solid #80a40e;
+}
+
+table.tabelaclassificacao tbody td{
+    background:#FFFFFF none repeat scroll 0 0;
+    border-right:0.2em solid #EEF1E6;
+    border-top:0.2em solid #EEF1E6;
+    border-left: 0.2em solid #EEF1E6;
+    text-align: center;
+}
+table.tabelaclassificacao tbody td img{
+    height: 20px;
+    width: 18px;
+}
+table.tabelaclassificacao tbody td.primeira{
+    text-align: left;
+    padding-left: 20px;
+}
+table.tabelaclassificacao tbody td.placar{
+    width: 25px;
+}
+table.tabelaclassificacao tbody td.versus{
+    width: 20px;
+}
+table.tabelaclassificacao tbody td input{
+    width: 100%;
+}
+button#finalizaCampeonato{
+    cursor: pointer;
+}
+/*
+.tabelaClassificacao{
+    border-collapse:collapse;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #32A9FA;
+    border-color: #EEF1E6;   
+}
+.tabelaClassificacao tr td{
+    background-color: #FFF;
+    border-width: 5px;
+}
+.tabelaClassificacao thead tr th{    
+}
+table#coluna1{    
+}
+*/

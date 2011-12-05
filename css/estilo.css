@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-size:12px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: #222;
+    background-color: #EEE;
+}
+.heightBordas{
+    height: 120px;
+}
+#cabecalho h1{
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;    
+}
+#cabecalho{
+    width: 100%;
+    background: transparent url(../img/topo.gif) repeat-x scroll 0 0;
+}
+#centraliza{
+    width: 83em;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+}
+#conteudo{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px solid #222;*/
+}
+#simboloTitulo{
+    width: 100%;
+    height: 120px;
+    border: 1px solid blue;
+}
+#listaCampeonatos{
+    margin: 0 auto;
+    width: 80%;
+    /*	height: 500px;*/
+    height: auto;
+    border: 1px solid black;
+}
+#listaTimes {
+    display: table;
+    height: auto;
+    width:100%;
+}
+#listaTimes ul{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    list-style: none;
+    list-style-position:inside;
+    display:table;
+}
+#listaCampeonatos ul li{
+    float: left;
+    height: 60px;
+    width: 50%;
+}
+#rodape{
+    background-color: #333;
+    width: 100%;
+}
+.listaCampeonatos{
+    list-style:none;
+}
+.listaCampeonatos li{
+    font-size: 1.2em;
+    color: #00007D;
+    font-weight: bold;
+    cursor: pointer;
+}
+.listaCampeonatos li:hover{
+    text-decoration: underline;
+}
+div#lightBox{
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    margin: 0; padding: 0;
+    background: #000;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    z-index: 1;
+}
+#centralLightBox{
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#botao{
+    z-index: 2;
+}
